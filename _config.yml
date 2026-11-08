@@ -9,6 +9,6 @@ permalink: /blog/:title/
 exclude: [README.md]
 defaults:
   - scope: { path: "", type: posts }
-    values: { layout: post }
+    values: { layout: post, author: "Дмитрий, основатель Просто24" }
 plugins:
   - jekyll-sitemap
