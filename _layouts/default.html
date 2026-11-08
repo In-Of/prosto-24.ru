@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} — {% endif %}Просто24</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <meta property="og:title" content="{{ page.title | default: site.title }}">
+  <meta property="og:description" content="{{ page.description | default: site.description }}">
+  <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap top__in">
+    <a href="/" class="logo">Просто<span>24</span></a>
+    <nav class="nav">
+      <a href="/#pain">Почему</a>
+      <a href="/#how">Как работаем</a>
+      <a href="/#training">Обучение</a>
+      <a href="/#prices">Цены</a>
+      <a href="/hosting/">Хостинг</a>
+      <a href="/#faq">Вопросы</a>
+    </nav>
+    <a href="/#contact" class="btn btn--sm">Бесплатный бриф</a>
+  </div>
+</header>
+
+<main>
+{{ content }}
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <p><span class="logo logo--sm">Просто<span>24</span></span> Своя CRM за 24 часа · <a href="/hosting/">Хостинг</a></p>
+    <!-- TODO: ФИО / ИП, ИНН — заполнить -->
+    <p class="foot__small">© 2026 Просто24. EspoCRM — продукт компании EspoCRM, Inc. Мы — независимая команда внедрения. Битрикс24 — товарный знак его правообладателя.</p>
+  </div>
+</footer>
+
+</body>
+</html>

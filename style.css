@@ -200,3 +200,27 @@ details p { color: var(--muted); padding-bottom: 8px; }
   .top .btn--sm { padding: 8px 12px; font-size: 14px; }
 }
 .center .lead { margin-left: auto; margin-right: auto; }
+
+/* Блог */
+.article { padding: 48px 20px 72px; max-width: 760px; }
+.article h1 { font-size: clamp(30px, 5vw, 46px); }
+.article__meta { font-size: 14px; color: var(--muted); margin-bottom: 12px; }
+.article__meta a { color: var(--accent); text-decoration: none; }
+.article__body h2 { font-size: clamp(24px, 3.4vw, 30px); margin-top: 1.6em; }
+.article__body h3 { margin-top: 1.4em; }
+.article__body a { color: var(--accent); }
+.article__body ul, .article__body ol { padding-left: 22px; }
+.article__body li { margin-bottom: 6px; }
+.article__body img { max-width: 100%; border-radius: 12px; border: 1px solid var(--line); }
+.article__body table { width: 100%; border-collapse: collapse; font-size: 15px; display: block; overflow-x: auto; margin: 20px 0; }
+.article__body th, .article__body td { border: 1px solid var(--line); padding: 10px 12px; text-align: left; vertical-align: top; background: var(--surface); }
+.article__body th { background: var(--alt); }
+.article__cta { margin-top: 48px; padding: 24px 26px; border-radius: var(--radius); background: var(--accent-soft); }
+.article__cta p { margin-top: 0; }
+.postlist { list-style: none; padding: 0; margin: 32px 0 0; }
+.postlist li { margin-bottom: 12px; }
+.postlist a { display: block; padding: 20px 24px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; text-decoration: none; }
+.postlist a:hover { border-color: var(--accent); }
+.postlist b { display: block; font-size: 19px; margin: 2px 0 6px; }
+.postlist span { color: var(--muted); font-size: 15px; display: block; }
+.postlist .postlist__date { font-size: 13px; }

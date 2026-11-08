@@ -1,0 +1,21 @@
+---
+layout: default
+title: Блог
+description: "Статьи о собственной CRM, переезде с Битрикс24, EspoCRM и о том, как сделать, чтобы сотрудники реально работали в CRM."
+---
+<section class="section">
+  <div class="wrap narrow">
+    <p class="eyebrow">Блог</p>
+    <h1>Блог Просто24</h1>
+    <p class="lead">О собственной CRM, переезде с Битрикс24 и о том, как сделать, чтобы сотрудники реально работали в CRM.</p>
+    {% if site.posts.size > 0 %}
+    <ul class="postlist">
+      {% for post in site.posts %}
+      <li><a href="{{ post.url }}"><span class="postlist__date">{{ post.date | date: "%d.%m.%Y" }}</span><b>{{ post.title }}</b>{% if post.description %}<span>{{ post.description }}</span>{% endif %}</a></li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p>Первые статьи скоро.</p>
+    {% endif %}
+  </div>
+</section>

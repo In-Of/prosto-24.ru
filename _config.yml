@@ -1,0 +1,12 @@
+title: "Просто24 — своя CRM за 24 часа"
+description: "Запускаем собственную CRM для малого и среднего бизнеса за 24 часа. Переезд с Битрикс24, хостинг в России, обучение и аттестация сотрудников."
+url: "https://prosto-24.ru"
+lang: ru
+markdown: kramdown
+kramdown:
+  input: GFM
+permalink: /blog/:title/
+exclude: [README.md]
+defaults:
+  - scope: { path: "", type: posts }
+    values: { layout: post }

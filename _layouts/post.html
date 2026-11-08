@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<article class="wrap article">
+  <p class="article__meta"><a href="/blog/">Блог</a> · {{ page.date | date: "%d.%m.%Y" }}{% if page.author %} · {{ page.author }}{% endif %}</p>
+  <h1>{{ page.title }}</h1>
+  <div class="article__body">
+{{ content }}
+  </div>
+  <aside class="article__cta">
+    <p><b>Своя CRM за 24 часа.</b> Настроим EspoCRM под ваш процесс, перенесём данные из Битрикс24, предоставим сервер в России и обучим каждого сотрудника.</p>
+    <a href="/#contact" class="btn">Получить бесплатный бриф</a>
+  </aside>
+</article>
