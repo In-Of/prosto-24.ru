@@ -199,3 +199,4 @@ details p { color: var(--muted); padding-bottom: 8px; }
   .pilot { flex-direction: column; align-items: flex-start; }
   .top .btn--sm { padding: 8px 12px; font-size: 14px; }
 }
+.center .lead { margin-left: auto; margin-right: auto; }
