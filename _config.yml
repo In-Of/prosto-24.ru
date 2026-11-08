@@ -10,3 +10,5 @@ exclude: [README.md]
 defaults:
   - scope: { path: "", type: posts }
     values: { layout: post }
+plugins:
+  - jekyll-sitemap
